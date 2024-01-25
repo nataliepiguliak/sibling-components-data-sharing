@@ -1,0 +1,7 @@
+<h2>Sibling 3</h2>
+<div>
+  Items: @for (item of items$ | async; track $index) {
+  <span>{{ item }}, </span>
+  }
+</div>
+<button (click)="clearItems()">Clear Items</button>

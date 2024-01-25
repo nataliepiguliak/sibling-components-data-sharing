@@ -1,0 +1,7 @@
+<h2>Sibling 2</h2>
+<div>Items:</div>
+<ul>
+  @for (item of items$ | async; track $index) {
+  <li>{{ item }}</li>
+  }
+</ul>
