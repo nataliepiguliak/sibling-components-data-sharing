@@ -10,6 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './sibling2.component.scss',
 })
 export class Sibling2Component {
-  items$ = this.itemsService.items$;
+  // TODO: get items as an Observable
   constructor(private itemsService: ItemsService) {}
 }

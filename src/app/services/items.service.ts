@@ -5,21 +5,17 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class ItemsService {
-  private _items$ = new BehaviorSubject<string[]>([]);
-  get items$() {
-    return this._items$.asObservable();
-  }
-  private get items() {
-    return this._items$.value;
-  }
+  // TODO: create a private collection of items
+  // TODO: retrieve items as an Observable
+  // TODO: retrieve items value
 
   constructor() {}
 
   addItem(data: string) {
-    this._items$.next([...this.items, data]);
+    // TODO: add item to the collection
   }
 
   clearItems() {
-    this._items$.next([]);
+    // TODO: clear items from the collection
   }
 }

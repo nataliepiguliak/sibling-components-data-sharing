@@ -10,11 +10,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './sibling3.component.scss',
 })
 export class Sibling3Component {
-  items$ = this.itemsService.items$;
+  // TODO: get items as an Observable
 
   constructor(private itemsService: ItemsService) {}
 
   clearItems() {
-    this.itemsService.clearItems();
+    // TODO: clear items from the shared service
   }
 }

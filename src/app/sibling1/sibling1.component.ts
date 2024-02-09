@@ -15,7 +15,7 @@ export class Sibling1Component {
   constructor(private itemsService: ItemsService) {}
 
   addItem() {
-    this.itemsService.addItem(this.item);
+    // TODO: add item to the shared collection
     this.item = '';
   }
 }
